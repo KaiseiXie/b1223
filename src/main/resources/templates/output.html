@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>LIST</h3>
+<ul th:each="userList : ${userList}" th:object=${user}>
+	<li th:text="*{id}"></li>
+	<li th:text="*{name}"></li>
+	<li th:text="*{age}"></li>
+</ul>
+</body>
+</html>
